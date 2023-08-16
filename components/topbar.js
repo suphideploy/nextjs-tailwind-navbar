@@ -10,21 +10,22 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const topbar = () => {
     return (
-        <div className="topbar bg-slate-200 mx-auto p-6 pt-1 h-1 shadow-2xl">
-            <div className="flex items-center justify-between">
-                <div className=''>
+      
+        <nav className="bg-white px-7 border-gray-200 dark:bg-gray-900 hidden lg:block">
+            <div className="flex relative items-center justify-between">
+                <div className="text-gray-50">
                     <span><FontAwesomeIcon  icon={ faPhone }  /> 0979535398</span>
                     <span className='pl-3'><FontAwesomeIcon  icon={ faEnvelope }  /> Chingchimplee@gmail.com</span>
                 </div>
-                <div className='flex'>
-                    <span> <Image src={thailandlogo} width="30" height="30" alt='test' /></span>
+                <div className="md:flex">
+                    <span className='pr-2'> <Image src={thailandlogo} width="30" height="30" alt='test' /></span>
                     <span> <Image src={englishlogo} width="30" height="30" alt='test' /></span>  
                 </div>
            
             </div>
             
             
-        </div>
+        </nav>
 
     )
 }
